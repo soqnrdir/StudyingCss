@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #empty{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            /* 만약에 해당 태그가 투명한 상태일때 위와 아래의 margin값중
+            큰 margin값이 시각적인 요소의 태그의 margin값을 적용된다. */
+            border: 1px solid tomato;
+        }
+        #normal{
+            background-color: powderblue;
+            /* 마진겹침에 의해 오버랩된다. */
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="empty"></div>
+    <div id="normal">normal</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 30px;
+        }
+        #parent, #other{
+            border:5px solid tomato
+        }
+        #large{
+            height: 10000px;
+            background-color: tomato;
+        }
+        #me{
+           background-color: black;
+           color: white;
+           /* fixed: 특정한 엘리먼트를 화면에 고정시킴 */
+           position: fixed;
+           left: 0;
+           top: 0;
+           /* fixed도 absolute처럼 width, height을 설정해 줘야 한다. */
+           width: 100%; 
+           height: 30px;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <!-- 부모와 링크가 끊김 -->
+        <div id="me">me</div>
+    </div> 
+    <div id="large">large</div>
+</body>
+</html>

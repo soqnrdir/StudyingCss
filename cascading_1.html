@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* !important 를 뒤에 붙이면 우선순위가 1위가 된다. */
+        li{color: red !important;}
+        #idsel{color: blue;}
+        .classsel{color:green;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>html</li>
+        <!-- 우선순위: style > id선택자 > 클래스선택자 > 태그 -->
+        <li id="idsel" class="classsel" style="color:powderblue">css</li>
+        <li>javascript</li>
+    </ul>
+    <ol>
+        <!-- 뭐가 더 구체적이고 명시적인가, 뭐가 더 포괄적이고 일반적인가 -->
+        <li>style attribute</li>
+        <li>id selector</li>
+        <li>class selector</li>
+        <li>tag selector</li>
+    </ol>
+</body>
+</html>

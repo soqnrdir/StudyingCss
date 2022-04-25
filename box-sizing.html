@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* border의 경계의 크기가 동일해졌음 */
+            box-sizing: border-box;
+        }
+        div{
+            margin: 10px;
+            /* 컨텐트영역을 width값으로 지정
+            이러한 문제를 해결하기 위한 box-sizing속성 */
+            width:150px;
+        }
+        #small{
+            border:10px solid black;
+        }
+        #large{
+            border:30px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="small">Hello</div>
+    <div id="large">Hello</div>
+</body>
+</html>

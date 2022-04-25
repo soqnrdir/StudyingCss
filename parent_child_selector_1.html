@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자간의 띄어쓰기를 통해 부모와 자손까지의 관계로 정의 */
+        ul li{
+            color:red;
+        }
+        /* lecture의 직계자손만 적용 */
+        #lecture>li{
+            border:1px solid red;
+        }
+        /* 복수 태그 스타일 지정  */
+        ul, ol{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS</li>
+            <ol>
+                <li>selector</li>
+                <li>declaration</li>
+            </ol>
+        <li>JavaScript</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            /* 수직정렬 */
+            align-items: center;
+            /* 수평정렬 */
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+            order:1;
+        }
+        nav {
+            order:0;
+        }
+        aside{
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi pariatur quisquam. Non deserunt impedit provident iusto ut omnis consequatur autem facilis facere repellat magni esse sunt consectetur veniam commodi tempora maxime repellendus quam explicabo dolore officiis, aliquid ea! Ex consequatur fuga nesciunt odit optio quod modi recusandae, illum officiis architecto, soluta aliquid non possimus voluptatum est dolorum debitis. A, ex voluptates explicabo soluta maxime fugiat voluptatibus veniam? Deleniti in consequatur eos iste officia expedita pariatur deserunt suscipit culpa repellendus nesciunt possimus facere officiis molestias alias magnam nobis, nulla, similique esse! Minima id natus minus autem odio sint ullam. Ducimus!
+                <p> 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At qui error, dolore, quasi corporis, iste exercitationem nam asperiores quae iusto alias ipsa quas laborum! Odit, explicabo, quaerat, quam maiores quia maxime sit asperiores inventore expedita incidunt reprehenderit aut? Distinctio nesciunt, quo obcaecati facere ad facilis doloribus natus ipsam dicta ipsum unde corporis, vero odit sit ipsa impedit est. Sed expedita consectetur assumenda dolores asperiores cumque, debitis sequi et quidem voluptatem? Voluptate officia eveniet earum, totam commodi quaerat doloremque beatae praesentium, expedita, aperiam possimus provident saepe fugit ea consectetur distinctio ipsam maiores! Optio nobis, ipsa necessitatibus voluptatum quod at corrupti alias.
+                </p>
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/module/2367/13526">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

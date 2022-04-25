@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 100px;
+            border:5px solid gray;
+            /* background-color를 함께 표시하기 위해선 png 확장명의 사진을 이용 */
+            background-color: azure;
+            /* 인터넷상의 주소나 로컬 사진명 */
+            background-image: url('space.jpg');
+        }
+        .png{
+            margin-top: 10px;
+            font-size: 50px;
+            height: 750px;
+            border:5px solid gray;
+            /* background-color를 함께 표시하기 위해선 png 확장명의 사진을 이용 */
+                /* background-color: tomato; */
+            /* 인터넷상의 주소나 로컬 사진명 
+             기본은 이미지가 반복적으로 표시된다.*/
+                /* background-image: url('lovely-cat.png'); */
+            /* 반복없이 x축 반복 repeat-x, y축은 repeat-y */
+                /* background-repeat: no-repeat; */
+                /* background-attachment: fixed; */
+            /* cover 화면 전체에 이미지로 빈틈없이 커버, contain은 이미지 전체를 볼 수 있게 */
+                /* background-size: contain; */
+                /* background-position: center center; */
+            /* 축약형 */
+            background: tomato url('lovely-cat.png') no-repeat center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello world
+    </div>
+    <div class="png">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi minus aliquam error commodi ducimus recusandae asperiores sapiente voluptatum aliquid molestias, vel nostrum sint expedita mollitia optio consequatur? Sit natus eaque optio, illum harum ab ipsum voluptates sint officiis inventore fuga! Perspiciatis dolores laborum vero autem. Facere ea corrupti at assumenda.
+    </div>
+</body>
+</html>

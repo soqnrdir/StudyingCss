@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 모바일에서의 화면조정을 위한 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 해당 width가 되면 background-color가 빨간색으로 변함. 
+        max-width = 최대 500아래일때
+        mix-width = 최대 500위일때*/
+
+        /* 캐스케이딩의 규칙을 잘 지켜야함 (우선순위) */
+        @media (max-width:600px) {
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px) {
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:601px) {
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    ~500px : red
+    501~600px : green
+    601px~ : blue
+</body>
+</html>

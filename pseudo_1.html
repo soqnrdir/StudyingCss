@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 뒤쪽에 있는 선언이 먼저 나타남 */
+        a:link{
+            color:black;
+        }
+        /* 보안상의 이유로 일부 속성만 사용 가능함 */
+        a:visited{
+            color:red;
+        }
+        a:hover{
+            color:yellow;
+        }
+        /* 속성의 상태에 따라.. */
+        a:active{
+            color:green;
+        }
+        /* 가장 뒤에다가 넣는 것이 좋다. */
+        a:focus{
+            color:white;
+        }
+        /* 입력할 때 css디자인 */
+        input:focus{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://opentutorials.org">방문함</a>
+    <a href="htts://a.a">방문안함</a>
+    <input type="text">
+</body>
+</html>

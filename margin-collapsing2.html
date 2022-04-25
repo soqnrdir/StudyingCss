@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border:1px solid tomato;
+            margin-top:100px;
+        }
+        #child{
+            background-color: powderblue;
+            /* 
+            부모속성을 기준으로 margin-top이 적용 
+            border와 같은 속성이 없다면 마진겹침현상 발생
+            부모엘리먼트가 투명한 상태일때 큰쪽의 margin값이
+            자식 margin값으로 적용된다.
+            */
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            hello world
+        </div>
+    </div>
+</body>
+</html>
